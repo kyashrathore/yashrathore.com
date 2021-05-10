@@ -1,0 +1,55 @@
+.link {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.w-fit {
+  width: fit-content;
+}
+
+.project:hover img {
+  opacity: 0.3;
+}
+
+li[data-spyLink] {
+  transition: padding ease-in 500ms;
+  position: relative;
+}
+li[data-spyLink]::before {
+  content: '';
+  transition: all ease-in 500ms;
+  opacity: 0;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.activeSpyLink {
+  font-weight: 700;
+  padding-left: 1rem;
+}
+li.activeSpyLink::before {
+  background-color: white;
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  top: 0;
+}
+
+@media (min-width: 1280px) {
+  .side {
+    height: calc(100vh - 10rem);
+  }
+}
+
+@media (max-width: 425px) {
+    .main-heading {
+      max-width: 75%;
+    }
+  }
+  
