@@ -3,69 +3,12 @@ import Link from 'next/link'
 import Head from 'next/head'
 import getAllPostPreviews from '@/getAllPostPreviews'
 import twitterCard from '@/img/twitter-card.jpg'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
-import yash from '../img/yash.png'
-import ff from '../img/ff.png'
 import { useEffect } from 'react'
-import scrollSpy, { throttle } from '@/utils/scrollSpy'
+import scrollSpy from '@/utils/scrollSpy'
 const posts = getAllPostPreviews()
 
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
-const Typography = ({ as, children }) => {
-  const As = as || 'h1'
-  return <As>{children}</As>
-}
 
-const Project = () => {
-  return (
-    <a className="project block relative rounded overflow-hidden ring-1 ring-opacity-25 hover:ring-opacity-70 hover:ring-1 cursor-pointer ring-white max-w-xl mb-8">
-      <img className="max-w-full absolute opacity-0" src={ff} />
-      <div className="px-4 py-8">
-        <span className="mb-2 mt-4 inline-block text-xs text-gray-100">React.js</span>
-
-        <h3 className="text-white mb-2 text-xl font-semibold">Frontend Folks</h3>
-
-        <p className="text-white mb-2 inline-block">
-          About An immutable JavaScript library to create, calculate and format money.
-        </p>
-      </div>
-    </a>
-  )
-}
-const SideNavigation = () => {
-  return (
-    <div className="hidden xl:block">
-      <div id="cursor"></div>
-      <ul id="menu" className="mb-20">
-        <li
-          data-SpyLink="0"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Projects</a>
-        </li>
-        <li
-          data-SpyLink="1"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Blog</a>
-        </li>
-        <li
-          data-SpyLink="2"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Snippets</a>
-        </li>
-        <li
-          data-SpyLink="3"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Resume</a>
-        </li>
-      </ul>
-    </div>
-  )
-}
 const BlogSectionContainer = ({ children }) => {
   return (
     <div className="bg-black min-h-screen">

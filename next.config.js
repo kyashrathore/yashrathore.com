@@ -14,7 +14,7 @@ const tokenClassNames = {
   punctuation: 'text-code-white',
   keyword: 'text-code-purple',
   string: 'text-code-green',
-  function: 'text-code-blue',
+  function: 'text-code-indigo',
   boolean: 'text-code-red',
   comment: 'text-gray-400 italic',
 }
@@ -50,7 +50,7 @@ module.exports = withBundleAnalyzer({
                 visit(tree, 'element', (node, index, parent) => {
                   let [token, type] = node.properties.className || []
                   if (token === 'token') {
-                    node.properties.className = [tokenClassNames[type]]
+                    node.properties.className = [tokenClassNames[type]] + ' ' + type
                   }
                 })
               }

@@ -47,7 +47,7 @@ module.exports = {
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
-          purple: '#5f39d4',
+          purple: '#A78BFA',
           red: '#ff8383',
           blue: '#93ddfd',
           white: '#fff',
@@ -56,32 +56,16 @@ module.exports = {
       typography: (theme) => ({
         default: {
           css: {
-            color: theme('colors.gray.700'),
             h1: {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.white'),
-              fontSize: theme('fontSize.6xl'),
             },
             h2: {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.white'),
             },
             h3: {
-              fontWeight: '600',
               color: theme('colors.white'),
             },
-            'ol li:before': {
-              fontWeight: '600',
-              color: theme('colors.white'),
-            },
-            'ul li:before': {
-              backgroundColor: theme('colors.white'),
-            },
-            code: {
-              color: theme('colors.white'),
-            },
+
             p: {
               color: theme('colors.white'),
             },
@@ -91,9 +75,8 @@ module.exports = {
               borderBottom: '1px solid white',
               cursor: theme('cursor.pointer'),
             },
-            pre: {
+            li: {
               color: theme('colors.white'),
-              backgroundColor: theme('colors.white'),
             },
             blockquote: {
               color: theme('colors.white'),
