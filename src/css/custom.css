@@ -48,8 +48,13 @@ li.activeSpyLink::before {
 }
 
 @media (max-width: 425px) {
-    .main-heading {
-      max-width: 75%;
-    }
+  .main-heading {
+    max-width: 75%;
   }
-  
+}
+
+.snippet > div {
+  background-color: #171717;
+  padding: 20px;
+  border-radius: 6px;
+}

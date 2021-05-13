@@ -1,0 +1,62 @@
+.prism-code {
+    color: hsl(243, 14%, 29%);
+    background-color: #fbfbfb;
+  }
+  
+  .prism-code .changed {
+    color: rgb(162, 191, 252);
+    font-style: italic;
+  }
+  .prism-code .deleted {
+    color: rgba(239, 83, 80, 0.56);
+    font-style: italic;
+  }
+  .prism-code .inserted,
+  .prism-code .attr-name {
+    color: rgb(72, 118, 214);
+    font-style: italic;
+  }
+  .prism-code .comment {
+    color: rgb(152, 159, 177);
+    font-style: italic;
+  }
+  .prism-code .string,
+  .prism-code .builtin,
+  .prism-code .char,
+  .prism-code .constant,
+  .prism-code .url {
+    color: rgb(72, 118, 214);
+  }
+  .prism-code .variable {
+    color: rgb(201, 103, 101);
+  }
+  .prism-code .number {
+    color: rgb(170, 9, 130);
+  }
+  .prism-code .punctuation {
+    color: rgb(153, 76, 195);
+  }
+  .prism-code .function,
+  .prism-code .selector,
+  .prism-code .doctype {
+    color: rgb(153, 76, 195);
+    font-style: italic;
+  }
+  .prism-code .class-name {
+    color: rgb(17, 17, 17);
+  }
+  .prism-code .tag {
+    color: rgb(153, 76, 195);
+  }
+  .prism-code .operator,
+  .prism-code .property,
+  .prism-code .keyword,
+  .prism-code .namespace {
+    color: rgb(12, 150, 155);
+  }
+  .prism-code .boolean {
+    color: rgb(188, 84, 84);
+  }
+  .prism-code .highlight {
+    background: hsla(0, 0%, 70%, 0.5);
+  }

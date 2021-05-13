@@ -42,21 +42,6 @@ module.exports = withBundleAnalyzer({
       options.defaultLoaders.babel,
       {
         loader: '@mdx-js/loader',
-        options: {
-          rehypePlugins: [
-            rehypePrism,
-            () => {
-              return (tree) => {
-                visit(tree, 'element', (node, index, parent) => {
-                  let [token, type] = node.properties.className || []
-                  if (token === 'token') {
-                    node.properties.className = [tokenClassNames[type]] + ' ' + type
-                  }
-                })
-              }
-            },
-          ],
-        },
       },
     ]
 

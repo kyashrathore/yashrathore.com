@@ -1,0 +1,65 @@
+.prism-code {
+  color: #d6deeb;
+  background-color:#171717;
+}
+.prism-code .changed {
+  color: rgb(162, 191, 252);
+  font-style: italic;
+}
+.deleted {
+  color: rgba(239, 83, 80, 0.56);
+  font-style: italic;
+}
+.prism-code .inserted,
+.prism-code .attr-name {
+  color: rgb(173, 219, 103);
+  font-style: italic;
+}
+.prism-code .comment {
+  color: rgb(99, 119, 119);
+  font-style: italic;
+}
+.prism-code .string,
+.prism-code .url {
+  color: rgb(173, 219, 103);
+}
+.prism-code .variable {
+  color: rgb(214, 222, 235);
+}
+.prism-code .number {
+  color: rgb(247, 140, 108);
+}
+.prism-code .builtin,
+.prism-code .char,
+.prism-code .constant,
+.prism-code .function {
+  color: rgb(130, 170, 255);
+}
+.prism-code .punctuation {
+  color: rgb(199, 146, 234);
+}
+.prism-code .selector,
+.prism-code .doctype {
+  color: rgb(199, 146, 234);
+  font-style: italic;
+}
+.prism-code .class-name {
+  color: rgb(255, 203, 139);
+}
+.prism-code .tag,
+.prism-code .operator,
+.prism-code .keyword {
+  color: rgb(127, 219, 202);
+}
+.prism-code .boolean {
+  color: rgb(255, 88, 116);
+}
+.prism-code .property {
+  color: rgb(128, 203, 196);
+}
+.prism-code .namespace {
+  color: rgb(178, 204, 214);
+}
+.prism-code .highlight {
+  background: hsla(0, 0%, 30%, 0prism-code 0.5);
+}

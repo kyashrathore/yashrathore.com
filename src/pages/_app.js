@@ -1,6 +1,14 @@
 import '@/css/tailwind.css'
 import '@/css/custom.css'
+import '@/css/code.css'
 import Head from 'next/head'
+import { MDXProvider } from '@mdx-js/react'
+import CodeBlock from '@/components/CodeBlock'
+
+const components = {
+  pre: (props) => <div {...props} />,
+  code: CodeBlock,
+}
 
 export default function App({ Component, pageProps }) {
   return (
@@ -17,7 +25,9 @@ export default function App({ Component, pageProps }) {
         <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/atom.xml" />
         <link rel="alternate" type="application/json" title="JSON Feed" href="/feed.json" />
       </Head>
-      <Component {...pageProps} />
+      <MDXProvider components={components}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </div>
   )
 }

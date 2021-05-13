@@ -1,92 +1,14 @@
-import tinytime from 'tinytime'
-import Link from 'next/link'
 import Head from 'next/head'
-import getAllPostPreviews from '@/getAllPostPreviews'
 import twitterCard from '@/img/twitter-card.jpg'
-import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import yash from '../img/yash.png'
-import ff from '../img/ff.png'
 import { useEffect } from 'react'
-import scrollSpy, { throttle } from '@/utils/scrollSpy'
-const posts = getAllPostPreviews()
-
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
-const Typography = ({ as, children }) => {
-  const As = as || 'h1'
-  return <As>{children}</As>
-}
-const projects = [
-  {
-    tags: ['Javascript', 'ReactJS'],
-    title: 'React Notifi',
-    desc: `Tiny (1.1kb) toast library for react notifications with animations and stackable toast's feature.`,
-    link: 'https://react-notifi.netlify.app/',
-  },
-  {
-    tags: ['Javascript'],
-    title: 'TypeEasy',
-    desc: `Minimal Typing game to master typing with top 3000 English words.`,
-    link: 'https://yashrathore.netlify.app/typing/typing.html',
-  },
-  {
-    tags: ['NextJS'],
-    title: 'Frontend Folks',
-    desc: 'About An immutable JavaScript library to create, calculate and format money.',
-    link: 'https://frontendfolks.vercel.app/',
-  },
-]
-const Project = ({ tags, title, desc, link }) => {
-  return (
-    <a
-      href={link}
-      className="project block relative rounded overflow-hidden ring-1 ring-opacity-25 hover:ring-opacity-70 hover:ring-1 cursor-pointer ring-white max-w-xl mb-8"
-    >
-      <div className="px-4 py-8">
-        {tags.map((tag) => {
-          return <span className="mb-2 mt-4 mr-2 inline-block text-xs text-gray-100">{tag}</span>
-        })}
-
-        <h3 className="text-white mb-2 text-xl font-semibold">{title}</h3>
-
-        <p className="text-white mb-2 inline-block">{desc}</p>
-      </div>
-    </a>
-  )
-}
-const SideNavigation = () => {
-  return (
-    <div className="hidden xl:block">
-      <div id="cursor"></div>
-      <ul id="menu" className="mb-20">
-        <li
-          data-SpyLink="0"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Projects</a>
-        </li>
-        <li
-          data-SpyLink="1"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Blog</a>
-        </li>
-        <li
-          data-SpyLink="2"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Snippets</a>
-        </li>
-        <li
-          data-SpyLink="3"
-          className="menu-item text-white mb-4 uppercase cursor-pointer text-sm hover:font-medium w-fit"
-        >
-          <a>Resume</a>
-        </li>
-      </ul>
-    </div>
-  )
-}
+import scrollSpy from '@/utils/scrollSpy'
+import SideNavigation from '@/components/SideNavigation'
+import Projects from '@/components/Projects'
+import Last5Blogs from '@/components/Last5Blogs'
+import Snippets from '@/components/Snippets'
+import Link from 'next/link'
 
 export default function Home() {
   useEffect(() => {
@@ -126,7 +48,7 @@ export default function Home() {
                     <br />
                     Yash Rathore
                   </h1>
-                  <p className=" max-w-xl text-white">
+                  <p className=" max-w-lg text-white">
                     I’m a Software Engineer currently working at{' '}
                     <a
                       rel="noopener"
@@ -145,8 +67,8 @@ export default function Home() {
                     >
                       React.js
                     </a>{' '}
-                    nerd. I can't shut up about test-driven development and utility-first CSS. I
-                    also share what I learn on my blog{' '}
+                    nerd. I can't shut up about NextJS and utility-first CSS. I also share what I
+                    learn on my blog{' '}
                     <a
                       rel="noopener"
                       target="_blank"
@@ -210,10 +132,30 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div data-spySection="0" className="mt-20 xl:mt-0">
-                {projects.map((project) => {
-                  return <Project {...project} />
-                })}
+              <div>
+                <div data-spySection="0" className="mt-20 xl:mt-0">
+                  <Projects />
+                </div>
+                <div data-spySection="1" className="mt-20 xl:mt-0  divide-y divide-white">
+                  <Last5Blogs />
+                  <div>
+                    <Link href="/blog">
+                      <a className="text-white mt-4 block cursor-pointer hover:text-gray-500 font-bold">
+                        View All Posts &rarr;
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div data-spySection="2" className="mt-20 xl:mt-0  divide-y divide-white  mb-64">
+                  <Snippets />
+                  <div>
+                    <Link href="/blog">
+                      <a className="text-white mt-4 block cursor-pointer hover:text-gray-500 font-bold">
+                        View All Snippets &rarr;
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

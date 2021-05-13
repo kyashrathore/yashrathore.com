@@ -1,0 +1,34 @@
+import { yash } from '@/authors'
+export const meta = {
+  title: `Mini Scroll Spy`,
+  description: `Highlighting links on scroll as section appears in viewport.`,
+  date: '2021-05-13T18:30:00.000Z',
+  authors: [yash],
+}
+
+```js
+export default function scrollSpy({ offset = 100 } = {}) {
+  const sectionElements = document.querySelectorAll('[data-spySection]')
+  const sectionOffsets = {}
+  ;[...sectionElements].forEach((section) => {
+    sectionOffsets[section.getAttribute('data-spySection')] = section.offsetTop
+  })
+
+  function handleActiveLinks() {
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+    for (const [sectionId, sectionOffset] of Object.entries(sectionOffsets)) {
+      if (sectionOffset - offset <= scrollPosition) {
+        // set in last iteration of loop
+        const currentActive = document.querySelector(`.activeSpyLink`)
+        const toBeActive = document.querySelector(`[data-spyLink="${sectionId}"]`)
+
+        if (currentActive) currentActive.classList.remove('activeSpyLink')
+        if (toBeActive) toBeActive.classList.add('activeSpyLink')
+      }
+    }
+  }
+  handleActiveLinks()
+
+  return handleActiveLinks, 100
+}
+```

@@ -1,10 +1,9 @@
 import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
-import getAllPostPreviews from '@/getAllPostPreviews'
+import getAllPostPreviews from '../getAllPostPreviews'
 import twitterCard from '@/img/twitter-card.jpg'
-import { useEffect } from 'react'
-import scrollSpy from '@/utils/scrollSpy'
+
 const posts = getAllPostPreviews()
 
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
@@ -16,15 +15,7 @@ const BlogSectionContainer = ({ children }) => {
     </div>
   )
 }
-export default function Home() {
-  useEffect(() => {
-    const registerScrollSpy = scrollSpy()
-
-    window.addEventListener('scroll', registerScrollSpy)
-    return () => {
-      window.removeEventListener('scroll', registerScrollSpy)
-    }
-  }, [])
+export default function Blog() {
   return (
     <>
       <BlogSectionContainer>
