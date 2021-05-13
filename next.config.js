@@ -1,23 +1,7 @@
 const { createLoader } = require('simple-functional-loader')
-const rehypePrism = require('@mapbox/rehype-prism')
-const visit = require('unist-util-visit')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
-
-const tokenClassNames = {
-  tag: 'text-code-red',
-  'attr-name': 'text-code-yellow',
-  'attr-value': 'text-code-green',
-  deleted: 'text-code-red',
-  inserted: 'text-code-green',
-  punctuation: 'text-code-white',
-  keyword: 'text-code-purple',
-  string: 'text-code-green',
-  function: 'text-code-indigo',
-  boolean: 'text-code-red',
-  comment: 'text-gray-400 italic',
-}
 
 module.exports = withBundleAnalyzer({
   pageExtensions: ['js', 'jsx', 'mdx'],
@@ -88,16 +72,6 @@ module.exports = withBundleAnalyzer({
         },
       ],
     })
-
-    if (!options.dev && options.isServer) {
-      const originalEntry = config.entry
-
-      config.entry = async () => {
-        const entries = { ...(await originalEntry()) }
-        entries['./scripts/build-rss.js'] = './scripts/build-rss.js'
-        return entries
-      }
-    }
 
     return config
   },
