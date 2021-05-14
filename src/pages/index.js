@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import twitterCard from '@/img/twitter-card.jpg'
 import SectionContainer from '@/components/SectionContainer'
-import yash from '../img/yash.png'
+import yash from '@/img/yash.jpeg'
 import { useEffect } from 'react'
 import scrollSpy from '@/utils/scrollSpy'
 import SideNavigation from '@/components/SideNavigation'

@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { MDXProvider } from '@mdx-js/react'
 import Header, { TailwindMark } from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
-import smallCard from '@/img/twitter-card-small.jpg'
+import yash from '@/img/yash.jpeg'
 
 export const mdxComponents = {
   pre: ({ className, ...props }) => (
@@ -42,7 +42,7 @@ export default function Post({ meta, children, posts }) {
                 ) : (
                   <>
                     <meta name="twitter:card" content="summary" />
-                    <meta name="twitter:image" content={`https://yashrathore.com${smallCard}`} />
+                    <meta name="twitter:image" content={`https://yashrathore.com${yash}`} />
                   </>
                 )}
                 <meta property="og:url" content={`https://yashrathore.com${router.pathname}`} />
