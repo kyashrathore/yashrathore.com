@@ -1,4 +1,4 @@
-import yashAvatar from './img/yash.jpeg'
+import yashAvatar from './img/yash-sm.jpg'
 
 export const yash = {
   name: 'Yash Rathore',
