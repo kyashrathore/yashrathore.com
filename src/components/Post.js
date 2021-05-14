@@ -29,36 +29,27 @@ export default function Post({ meta, children, posts }) {
           <main>
             <article className="py-16">
               <Head>
-                <title>{meta.title} – Tailwind CSS</title>
-                <meta name="twitter:site" content="@tailwindcss" />
-                <meta name="twitter:creator" content="@tailwindcss" />
-                <meta name="twitter:title" content={`${meta.title} – Tailwind CSS`} />
+                <title>{meta.title} – Yash Rathore</title>
+                <meta name="twitter:site" content="@kyashrathore" />
+                <meta name="twitter:creator" content="@kyashrathore" />
+                <meta name="twitter:title" content={`${meta.title} – Yash Rathore`} />
                 <meta name="twitter:description" content={meta.description} />
                 {meta.image ? (
                   <>
                     <meta name="twitter:card" content="summary_large_image" />
-                    <meta
-                      name="twitter:image"
-                      content={`https://blog.tailwindcss.com${meta.image}`}
-                    />
+                    <meta name="twitter:image" content={`https://yashrathore.com${meta.image}`} />
                   </>
                 ) : (
                   <>
                     <meta name="twitter:card" content="summary" />
-                    <meta
-                      name="twitter:image"
-                      content={`https://blog.tailwindcss.com${smallCard}`}
-                    />
+                    <meta name="twitter:image" content={`https://yashrathore.com${smallCard}`} />
                   </>
                 )}
-                <meta
-                  property="og:url"
-                  content={`https://blog.tailwindcss.com${router.pathname}`}
-                />
+                <meta property="og:url" content={`https://yashrathore.com${router.pathname}`} />
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content={`${meta.title} – Tailwind CSS`} />
+                <meta property="og:title" content={`${meta.title} – Yash Rathore`} />
                 <meta property="og:description" content={meta.description} />
-                <meta property="og:image" content={`https://blog.tailwindcss.com${meta.image}`} />
+                <meta property="og:image" content={`https://yashrathore.com${meta.image}`} />
                 <meta name="description" content={meta.description}></meta>
               </Head>
               <header className="">
@@ -126,18 +117,18 @@ export default function Post({ meta, children, posts }) {
         <main>
           <article>
             <Head>
-              <title>{meta.title} – Tailwind CSS</title>
+              <title>{meta.title} – Yash Rathore</title>
               <meta name="twitter:card" content="summary_large_image" />
-              <meta name="twitter:site" content="@tailwindcss" />
-              <meta name="twitter:creator" content="@tailwindcss" />
-              <meta name="twitter:title" content={`${meta.title} – Tailwind CSS`} />
+              <meta name="twitter:site" content="@kyashrathore" />
+              <meta name="twitter:creator" content="@kyashrathore" />
+              <meta name="twitter:title" content={`${meta.title} – Yash Rathore`} />
               <meta name="twitter:description" content={meta.description} />
-              <meta name="twitter:image" content={`https://blog.tailwindcss.com${meta.image}`} />
-              <meta property="og:url" content={`https://blog.tailwindcss.com${router.pathname}`} />
+              <meta name="twitter:image" content={`https://yashrathore.com${meta.image}`} />
+              <meta property="og:url" content={`https://yashrathore.com${router.pathname}`} />
               <meta property="og:type" content="article" />
-              <meta property="og:title" content={`${meta.title} – Tailwind CSS`} />
+              <meta property="og:title" content={`${meta.title} – Yash Rathore`} />
               <meta property="og:description" content={meta.description} />
-              <meta property="og:image" content={`https://blog.tailwindcss.com${meta.image}`} />
+              <meta property="og:image" content={`https://yashrathore.com${meta.image}`} />
               <meta name="description" content={meta.description}></meta>
             </Head>
             <header className="xl:pb-10 pt-20">

@@ -26,18 +26,18 @@ export default function Home() {
           <div className="divide-y divide-gray-200">
             <Head>
               <meta name="twitter:card" content="summary_large_image" />
-              <meta name="twitter:site" content="@tailwindcss" />
-              <meta name="twitter:creator" content="@tailwindcss" />
+              <meta name="twitter:site" content="@kyashrathore" />
+              <meta name="twitter:creator" content="@kyashrathore" />
               <meta name="twitter:title" content="Yash Rathore" />
-              <meta name="twitter:description" content="News content from the Tailwind CSS team." />
-              <meta name="twitter:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
-              <meta property="og:url" content="https://blog.tailwindcss.com" />
+              <meta name="twitter:description" content="New blog from Yash Rathore" />
+              <meta name="twitter:image" content={`https://yashrathore.com${yash}`} />
+              <meta property="og:url" content="https://yashrathore.com" />
               <meta property="og:type" content="article" />
               <meta property="og:title" content="Yash Rathore" />
-              <meta property="og:description" content="News content from the Tailwind CSS team." />
-              <meta property="og:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
+              <meta property="og:description" content="New blog from Yash Rathore" />
+              <meta property="og:image" content={`https://yashrathore.com${yash}`} />
               <title>Yash Rathore</title>
-              <meta name="description" content="News content from the Tailwind CSS team." />
+              <meta name="description" content="New blog from Yash Rathore" />
             </Head>
 
             <div className="grid xl:grid-flow-col grid-cols-1 gap-x-4 py-20">
