@@ -45,43 +45,38 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        code: {
-          green: '#b5f4a5',
-          yellow: '#ffe484',
-          purple: '#A78BFA',
-          red: '#ff8383',
-          blue: '#93ddfd',
-          white: '#fff',
-        },
+        heading: 'white',
+        body: '#dadfe1',
       },
       typography: (theme) => ({
         default: {
           css: {
             h1: {
-              color: theme('colors.white'),
+              color: theme('colors.heading'),
             },
             h2: {
-              color: theme('colors.white'),
+              color: theme('colors.heading'),
             },
             h3: {
-              color: theme('colors.white'),
+              color: theme('colors.heading'),
             },
 
             p: {
-              color: theme('colors.white'),
+              color: theme('colors.body'),
             },
             a: {
-              color: theme('colors.white'),
+              color: theme('colors.body'),
               textDecoration: 'none',
-              borderBottom: '1px solid white',
+              borderBottom: '1px solid',
+              borderColor: theme('colors.body'),
               cursor: theme('cursor.pointer'),
             },
             li: {
-              color: theme('colors.white'),
+              color: theme('colors.body'),
             },
             blockquote: {
-              color: theme('colors.white'),
-              borderLeftColor: theme('colors.white'),
+              color: theme('colors.body'),
+              borderLeftColor: theme('colors.body'),
             },
           },
         },

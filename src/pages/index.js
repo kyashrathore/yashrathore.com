@@ -43,17 +43,17 @@ export default function Home() {
             <div className="grid xl:grid-flow-col grid-cols-1 gap-x-4 py-20">
               <div className="flex flex-col justify-start xl:justify-between  xl:self-start xl:sticky top-20 side">
                 <div>
-                  <h1 className="max-w-xl mb-8 font-bold text-white text-6xl main-heading">
+                  <h1 className="max-w-xl mb-8 font-bold text-heading text-6xl main-heading">
                     Hello, I'am
                     <br />
                     Yash Rathore
                   </h1>
-                  <p className=" max-w-lg text-white">
+                  <p className=" max-w-lg text-body">
                     I’m a Software Engineer currently working at{' '}
                     <a
                       rel="noopener"
                       target="_blank"
-                      className="text-gray-300 border-b border-gray-300"
+                      className="text-body hover:text-heading border-b border-body"
                       href="https://recko.io"
                     >
                       Recko
@@ -62,7 +62,7 @@ export default function Home() {
                     <a
                       rel="noopener"
                       target="_blank"
-                      className="text-gray-300 border-b border-gray-300"
+                      className="text-body hover:text-heading border-b border-body"
                       href="https://reactjs.org"
                     >
                       React.js
@@ -72,7 +72,7 @@ export default function Home() {
                     <a
                       rel="noopener"
                       target="_blank"
-                      className="text-gray-300 border-b border-gray-300"
+                      className="text-body hover:text-heading border-b border-body"
                       href="/blog"
                     >
                       yashrathore.com/blog
@@ -94,7 +94,7 @@ export default function Home() {
                           href="https://twitter.com/kyashrathore"
                           rel="noopener"
                           target="_blank"
-                          className="flex items-center text-white"
+                          className="flex items-center text-body"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ export default function Home() {
                           href="https://github.com/kyashrathore/"
                           rel="noopener"
                           target="_blank"
-                          className="flex items-center text-white"
+                          className="flex items-center text-body"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ export default function Home() {
                   <Last5Blogs />
                   <div>
                     <Link href="/blog">
-                      <a className="text-white mt-4 block cursor-pointer hover:text-gray-500 font-bold">
+                      <a className="text-body hover:text-heading  mt-4 block cursor-pointer font-bold">
                         View All Posts &rarr;
                       </a>
                     </Link>
@@ -150,7 +150,7 @@ export default function Home() {
                   <Snippets />
                   <div>
                     <Link href="/blog">
-                      <a className="text-white mt-4 block cursor-pointer hover:text-gray-500 font-bold">
+                      <a className="text-body hover:text-heading  mt-4 block cursor-pointer font-bold">
                         View All Snippets &rarr;
                       </a>
                     </Link>

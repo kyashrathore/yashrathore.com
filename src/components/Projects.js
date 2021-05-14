@@ -26,12 +26,12 @@ const ProjectCard = ({ tags, title, desc, link }) => {
     >
       <div className="px-4 py-8">
         {tags.map((tag) => {
-          return <span className="mb-2 mt-4 mr-2 inline-block text-xs text-gray-100">{tag}</span>
+          return <span className="mb-2 mt-4 mr-2 inline-block text-xs text-body">{tag}</span>
         })}
 
-        <h3 className="text-white mb-2 text-xl font-semibold">{title}</h3>
+        <h3 className="text-heading mb-2 text-xl font-semibold">{title}</h3>
 
-        <p className="text-white mb-2 inline-block">{desc}</p>
+        <p className="text-body mb-2 inline-block">{desc}</p>
       </div>
     </a>
   )

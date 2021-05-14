@@ -16,13 +16,16 @@ export default function Blog() {
                     <a className="text-white">{meta.title}</a>
                   </Link>
                 </h2>
-                <div className="prose max-w-lg text-gray-500">
+                <div className="prose max-w-l">
                   <Component />
                 </div>
               </div>
               <div className="text-base leading-6 font-medium pt-2">
                 <Link href={link}>
-                  <a className="text-white hover:text-gray-500" aria-label={`Read "${meta.title}"`}>
+                  <a
+                    className="text-body hover:text-heading  font-medium"
+                    aria-label={`Read "${meta.title}"`}
+                  >
                     Read more &rarr;
                   </a>
                 </Link>

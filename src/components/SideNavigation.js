@@ -11,7 +11,7 @@ const SideNavigation = () => {
             return (
               <li
                 data-SpyLink={index}
-                className="menu-item text-white mb-4 cursor-pointer hover:font-medium "
+                className="menu-item text-body mb-4 cursor-pointer hover:font-medium "
               >
                 <a>{link.label}</a>
               </li>
@@ -23,7 +23,7 @@ const SideNavigation = () => {
             return (
               <li
                 data-SpyLink={index}
-                className="menu-item text-white mb-4 cursor-pointer hover:font-medium w-fit"
+                className="menu-item text-body mb-4 cursor-pointer hover:font-medium w-fit"
               >
                 <a>{link.label}</a>
               </li>

@@ -42,7 +42,7 @@ export default function Blog() {
                   <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-base leading-6 font-medium text-white">
+                      <dd className="text-base leading-6 font-medium text-body">
                         <time dateTime={meta.date}>
                           {postDateTemplate.render(new Date(meta.date))}
                         </time>
@@ -50,19 +50,19 @@ export default function Blog() {
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
-                        <h2 className="text-2xl text-white  leading-8 font-bold tracking-tight">
+                        <h2 className="text-2xl text-heading  leading-8 font-bold tracking-tight">
                           <Link href={link}>
-                            <a className="text-white">{meta.title}</a>
+                            <a className="text-heading">{meta.title}</a>
                           </Link>
                         </h2>
-                        <div className="prose max-w-none text-gray-500">
+                        <div className="prose max-w-none">
                           <Component />
                         </div>
                       </div>
                       <div className="text-base leading-6 font-medium">
                         <Link href={link}>
                           <a
-                            className="text-white hover:text-gray-500"
+                            className="text-body hover:text-heading"
                             aria-label={`Read "${meta.title}"`}
                           >
                             Read more &rarr;
