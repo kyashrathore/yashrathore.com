@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import SectionContainer from '@/components/SectionContainer'
-import yash from '@/img/yash.jpg'
 import { useEffect } from 'react'
 import scrollSpy from '@/utils/scrollSpy'
 import SideNavigation from '@/components/SideNavigation'
@@ -8,6 +7,8 @@ import Projects from '@/components/Projects'
 import Last5Blogs from '@/components/Last5Blogs'
 import Snippets from '@/components/Snippets'
 import Link from 'next/link'
+import yashOGImaage from '@/img/yash-16*9.jpg'
+import { yash } from '@/authors'
 
 export default function Home() {
   useEffect(() => {
@@ -29,12 +30,12 @@ export default function Home() {
               <meta name="twitter:creator" content="@kyashrathore" />
               <meta name="twitter:title" content="Yash Rathore" />
               <meta name="twitter:description" content="New blog from Yash Rathore" />
-              <meta name="twitter:image" content={`https://yashrathore.com${yash}`} />
+              <meta name="twitter:image" content={`https://yashrathore.com${yashOGImaage}`} />
               <meta property="og:url" content="https://yashrathore.com" />
               <meta property="og:type" content="article" />
               <meta property="og:title" content="Yash Rathore" />
               <meta property="og:description" content="New blog from Yash Rathore" />
-              <meta property="og:image" content={`https://yashrathore.com${yash}`} />
+              <meta property="og:image" content={`https://yashrathore.com${yashOGImaage}`} />
               <title>Yash Rathore</title>
               <meta name="description" content="New blog from Yash Rathore" />
             </Head>

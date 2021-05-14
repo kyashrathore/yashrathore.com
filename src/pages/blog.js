@@ -2,7 +2,7 @@ import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
 import getAllPostPreviews from '../getAllPostPreviews'
-import yash from '@/img/yash.jpg'
+import yashOGImaage from '@/img/yash-16*9.jpg'
 
 const posts = getAllPostPreviews()
 
@@ -26,12 +26,12 @@ export default function Blog() {
             <meta name="twitter:creator" content="@kyashrathore" />
             <meta name="twitter:title" content="Yash Rathore" />
             <meta name="twitter:description" content="New blog from Yash Rathore" />
-            <meta name="twitter:image" content={`https://yashrathore.com${yash}`} />
+            <meta name="twitter:image" content={`https://yashrathore.com${yashOGImaage}`} />
             <meta property="og:url" content="https://yashrathore.com" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="Yash Rathore" />
             <meta property="og:description" content="New blog from Yash Rathore" />
-            <meta property="og:image" content={`https://yashrathore.com${yash}`} />
+            <meta property="og:image" content={`https://yashrathore.com${yashOGImaage}`} />
             <title>Yash Rathore</title>
             <meta name="description" content="New blog from Yash Rathore" />
           </Head>
