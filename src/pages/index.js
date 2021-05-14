@@ -85,7 +85,7 @@ export default function Home() {
                   <div className="flex items-center w-full mt-20 xl:mt-0">
                     <img
                       alt="Yash's headshot"
-                      src={yash}
+                      src={yash.avatar}
                       className="w-12 h-12 mr-4 rounded-full filter grayscale tranform hover:scale-150"
                     />
                     <ul className="flex text-zenith overflow-hidden">
