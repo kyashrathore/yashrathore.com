@@ -2,7 +2,7 @@ import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
 import getAllPostPreviews from '../getAllPostPreviews'
-import yash from '@/img/yash.jpeg'
+import yash from '@/img/yash.jpg'
 
 const posts = getAllPostPreviews()
 

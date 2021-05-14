@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import SectionContainer from '@/components/SectionContainer'
-import yash from '@/img/yash.jpeg'
+import yash from '@/img/yash.jpg'
 import { useEffect } from 'react'
 import scrollSpy from '@/utils/scrollSpy'
 import SideNavigation from '@/components/SideNavigation'

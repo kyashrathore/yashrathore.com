@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { MDXProvider } from '@mdx-js/react'
 import Header, { TailwindMark } from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
-import yash from '@/img/yash.jpeg'
+import yash from '@/img/yash.jpg'
 
 export const mdxComponents = {
   pre: ({ className, ...props }) => (
