@@ -5,6 +5,7 @@ module.exports = {
   purge: {
     mode: 'all',
     content: ['./src/**/*.{js,mdx}', './next.config.js'],
+    darkMode: false, // or 'media' or 'class'
     options: {
       extractors: [
         {

@@ -1,6 +1,6 @@
 import '@/css/tailwind.css'
-import '@/css/custom.css'
 import '@/css/code.css'
+import '@/css/custom.css'
 import Head from 'next/head'
 import { MDXProvider } from '@mdx-js/react'
 import CodeBlock from '@/components/CodeBlock'

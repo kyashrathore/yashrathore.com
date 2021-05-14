@@ -1,6 +1,8 @@
+/* purgecss start ignore */
+
 .prism-code {
   color: #d6deeb;
-  background-color:#171717;
+  background-color: #171717;
 }
 .prism-code .changed {
   color: rgb(162, 191, 252);
@@ -63,3 +65,4 @@
 .prism-code .highlight {
   background: hsla(0, 0%, 30%, 0prism-code 0.5);
 }
+/* purgecss end ignore */

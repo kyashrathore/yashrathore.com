@@ -6,7 +6,6 @@ export default function scrollSpy({ offset = 100 } = {}) {
   })
 
   function handleActiveLinks() {
-    console.log('ehl')
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
     for (const [sectionId, sectionOffset] of Object.entries(sectionOffsets)) {
       if (sectionOffset - offset <= scrollPosition) {
