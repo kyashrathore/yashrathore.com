@@ -29,6 +29,17 @@ export default function scrollSpy({ offset = 100 } = {}) {
   }
   handleActiveLinks()
 
-  return handleActiveLinks, 100
+  return handleActiveLinks
 }
+
+// usage
+
+useEffect(() => {
+  const registerScrollSpy = scrollSpy()
+
+  window.addEventListener('scroll', registerScrollSpy)
+  return () => {
+    window.removeEventListener('scroll', registerScrollSpy)
+  }
+}, [])
 ```

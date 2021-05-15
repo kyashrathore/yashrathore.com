@@ -12,6 +12,7 @@ export default function Snippets() {
               <h2 className="text-2xl max-w-xl text-white  leading-8 font-bold tracking-tight">
                 {meta.title}
               </h2>
+              <p className="mb-6 text-body">{meta.description}</p>
               <div className="max-w-xl text-gray-500 text-sm snippet">
                 <Component />
               </div>

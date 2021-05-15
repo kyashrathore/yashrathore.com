@@ -1,5 +1,7 @@
 const links1 = [{ label: 'Projects' }, { label: 'Blog' }, { label: 'Snippets' }]
-const links2 = [{ label: <>Download Resume &rarr;</> }]
+const links2 = [
+  { label: <>Download Resume &rarr;</>, href: '/Yashvardhan-Singh.pdf', target: '_blank' },
+]
 
 const SideNavigation = () => {
   return (
@@ -19,13 +21,13 @@ const SideNavigation = () => {
           })}
         </ul>
         <ul id="menu" className="w-44 mb-20 pt-4">
-          {links2.map((link, index) => {
+          {links2.map(({ label, ...rest }, index) => {
             return (
               <li
                 data-SpyLink={index}
                 className="menu-item text-body mb-4 cursor-pointer hover:font-medium w-fit"
               >
-                <a>{link.label}</a>
+                <a {...rest}>{label}</a>
               </li>
             )
           })}

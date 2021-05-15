@@ -133,10 +133,10 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div data-spySection="0" className="mt-20 xl:mt-0">
+                <div data-spySection="0">
                   <Projects />
                 </div>
-                <div data-spySection="1" className="mt-20 xl:mt-0  divide-y divide-white">
+                <div data-spySection="1" className="divide-y divide-white">
                   <Last5Blogs />
                   <div>
                     <Link href="/blog">
@@ -146,10 +146,10 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div data-spySection="2" className="mt-20 xl:mt-0  divide-y divide-white  mb-64">
+                <div data-spySection="2" className="divide-y divide-white  mb-64">
                   <Snippets />
                   <div>
-                    <Link href="/blog">
+                    <Link href="/snippets">
                       <a className="text-body hover:text-heading  mt-4 block cursor-pointer font-bold">
                         View All Snippets &rarr;
                       </a>
