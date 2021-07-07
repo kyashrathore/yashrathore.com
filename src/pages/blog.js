@@ -54,8 +54,8 @@ export default function Blog() {
                         </h2>
                         <dl class="">
                           <dt class="sr-only">Authors</dt>
-                          <dd>
-                            <ul class="flex justify-center xl:block space-x-8 sm:space-x-12 xl:space-x-0 xl:space-y-8">
+                          <dd className="w-fit">
+                            <ul class="flex justify-center">
                               <li class="flex items-center space-x-2">
                                 <img src={yash.avatar} alt="" class="w-10 h-10 rounded-full" />
                                 <dl class="text-sm font-medium whitespace-no-wrap">
