@@ -56,9 +56,9 @@ export default function Home() {
                       className="text-body hover:text-heading border-b border-body"
                       href="https://recko.io"
                     >
-                      Recko
+                      Stripe, India
                     </a>
-                    , Bangalore. I mostly do front-end development, and I’m a{' '}
+                    . I mostly do front-end development, and I’m a{' '}
                     <a
                       rel="noopener"
                       target="_blank"
